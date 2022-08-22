@@ -2344,11 +2344,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hector\\Downloads\\ApiPruebaTecnica\\ApiPruebaTecnica\\ApiPruebaTecnica.csproj",
+      "projectUniqueName": "C:\\Users\\Hector\\Documents\\GitHub\\Prueba_Tecnica\\ApiPruebaTecnica\\ApiPruebaTecnica\\ApiPruebaTecnica.csproj",
       "projectName": "ApiPruebaTecnica",
-      "projectPath": "C:\\Users\\Hector\\Downloads\\ApiPruebaTecnica\\ApiPruebaTecnica\\ApiPruebaTecnica.csproj",
+      "projectPath": "C:\\Users\\Hector\\Documents\\GitHub\\Prueba_Tecnica\\ApiPruebaTecnica\\ApiPruebaTecnica\\ApiPruebaTecnica.csproj",
       "packagesPath": "C:\\Users\\Hector\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hector\\Downloads\\ApiPruebaTecnica\\ApiPruebaTecnica\\obj\\",
+      "outputPath": "C:\\Users\\Hector\\Documents\\GitHub\\Prueba_Tecnica\\ApiPruebaTecnica\\ApiPruebaTecnica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

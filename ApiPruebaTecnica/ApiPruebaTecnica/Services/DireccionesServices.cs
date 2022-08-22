@@ -19,9 +19,15 @@ namespace ApiPruebaTecnica.Services
           await  _context.SaveChangesAsync();    
         }
 
-        public Task Delete(int id)
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Direcciones.FirstOrDefaultAsync(x => x.IdDireccion == id);
+
+            if (entity != null)
+            {
+                _context.Direcciones.Remove(entity);
+                await _context.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<Direcciones>> GetAll()
@@ -30,14 +36,15 @@ namespace ApiPruebaTecnica.Services
             return lista;
         }
 
-        public Task<Direcciones> GetById(int id)
+        public async Task<Direcciones> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Direcciones.FirstOrDefaultAsync(x => x.IdDireccion == id);
         }
 
-        public Task Update(Direcciones entity)
+        public async Task Update(Direcciones entity)
         {
-            throw new NotImplementedException();
+            _context.Direcciones.Update(entity);
+            await _context.SaveChangesAsync();
         }
     }
 }

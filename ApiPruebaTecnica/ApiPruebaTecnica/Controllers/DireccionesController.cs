@@ -40,6 +40,41 @@ namespace ApiPruebaTecnica.Controllers
             }
         }
 
+        [HttpPut]
+        public async Task<IActionResult> Editar([FromBody] Direcciones entidad)
+        {
+            if (entidad != null)
+            {
+                await _context.Update(entidad);
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Borrar([FromBody] int id)
+        {
+            if (id != null)
+            {
+                await _context.Delete(id);
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        [Route("buscarDirecciones")]
+        public async Task<IActionResult> buscarDirecciones(int id)
+        {
+            return Ok(await _context.GetById(id));
+        }
+
 
     }
 }
